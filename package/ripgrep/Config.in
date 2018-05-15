@@ -1,0 +1,7 @@
+config BR2_PACKAGE_RIPGREP
+	bool "ripgrep"
+	depends on BR2_PACKAGE_HOST_RUSTC_ARCH_SUPPORTS
+	select BR2_PACKAGE_HOST_CARGO
+	help
+	  ripgrep combines the usability of The Silver Searcher with
+	  the raw speed of grep.

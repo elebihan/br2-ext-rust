@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL_RUST_PATH/package/hello-rust/Config.in"
+source "$BR2_EXTERNAL_RUST_PATH/package/ripgrep/Config.in"
