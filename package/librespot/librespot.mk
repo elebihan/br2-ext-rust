@@ -7,7 +7,7 @@
 LIBRESPOT_VERSION = 9d9c3117ed87e751a240ce2ff1d57cf17bf0b27f
 LIBRESPOT_SITE = $(call github,librespot-org,librespot,$(LIBRESPOT_VERSION))
 
-LIBRESPOT_DEPENDENCIES = host-cargo pulseaudio
+LIBRESPOT_DEPENDENCIES = host-cargo host-rustc pulseaudio
 
 LIBRESPOT_CARGO_ENV = CARGO_HOME=$(HOST_DIR)/share/cargo
 LIBRESPOT_CARGO_MODE = $(if $(BR2_ENABLE_DEBUG),debug,release)
