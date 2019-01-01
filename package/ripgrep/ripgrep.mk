@@ -4,11 +4,11 @@
 #
 ################################################################################
 
-RIPGREP_VERSION = 0.7.1
+RIPGREP_VERSION = 0.10.0
 RIPGREP_SITE = $(call github,BurntSushi,ripgrep,$(RIPGREP_VERSION))
 RIPGREP_LICENSE = MIT
 
-RIPGREP_DEPENDENCIES = host-cargo
+RIPGREP_DEPENDENCIES = host-cargo host-rustc
 
 RIPGREP_CARGO_ENV = CARGO_HOME=$(HOST_DIR)/share/cargo
 RIPGREP_CARGO_MODE = $(if $(BR2_ENABLE_DEBUG),debug,release)
