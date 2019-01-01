@@ -1,6 +1,5 @@
 config BR2_PACKAGE_HELLO_RUST
 	bool "hello-rust"
-	depends on BR2_PACKAGE_HOST_RUSTC_ARCH_SUPPORTS
-	select BR2_PACKAGE_HOST_CARGO
+	depends on BR2_PACKAGE_HAS_HOST_CARGO
 	help
 	  "Hello World!" program written in Rust

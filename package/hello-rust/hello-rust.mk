@@ -9,7 +9,7 @@ HELLO_RUST_SITE = $(HOME)/src/hello-rust
 HELLO_RUST_SITE_METHOD = local
 HELLO_RUST_LICENSE = Public Domain
 
-HELLO_RUST_DEPENDENCIES = host-cargo
+HELLO_RUST_DEPENDENCIES = host-cargo host-rustc
 
 HELLO_RUST_CARGO_ENV = CARGO_HOME=$(HOST_DIR)/usr/share/cargo
 HELLO_RUST_CARGO_MODE = $(if $(BR2_ENABLE_DEBUG),debug,release)
